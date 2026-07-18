@@ -4,14 +4,14 @@ import random
 import asyncio
 import time
 import re
-from ChatComplete.database import SessionLocal, User, BroadCast
-from ChatComplete.generate import generate
+from database import SessionLocal, User, BroadCast
+from generate import generate
 from aiogram import F, Router, Bot
 from aiogram.filters import CommandStart, Command
 from aiogram.enums import ContentType
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.types import Message, CallbackQuery, LabeledPrice, PreCheckoutQuery, BufferedInputFile
-from ChatComplete.config import TOKEN, ADMIN_ID,AI_TOKEN,OCR_API_KEY
+from config import TOKEN, ADMIN_ID,AI_TOKEN,OCR_API_KEY
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
 from datetime import datetime
